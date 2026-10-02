@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#234a40">
+  <meta name="description" content="春秋蝉：从今天的小事开始。90 天新手期，终身成长记录。">
+  <title>春秋蝉 · 今日</title>
+  <link rel="icon" type="image/svg+xml" href="./icon.svg">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div id="storage-warning" class="warning" role="alert" hidden></div>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="#today" aria-label="春秋蝉首页"><img src="./icon.svg" width="36" height="36" alt=""><span>春秋蝉<small>把日子，慢慢过好。</small></span></a>
+      <nav aria-label="主导航">
+        <a href="#today" data-page="today"><span>◉</span>今日<span class="nav-en">TODAY</span></a>
+        <a href="#growth" data-page="growth"><span>⌘</span>生长<span class="nav-en">GROWTH</span></a>
+        <a href="#records" data-page="records"><span>▤</span>记录<span class="nav-en">JOURNAL</span></a>
+        <a href="#review" data-page="review"><span>◷</span>复盘<span class="nav-en">REVIEW</span></a>
+        <a href="#settings" data-page="settings"><span>⚙</span>设置<span class="nav-en">SETTINGS</span></a>
+      </nav>
+      <div class="sidebar-note"><span class="status-dot"></span>无需登录 · 数据留在本机<p>不必每天满分。<br>回来，就继续生长。</p><small>春秋蝉 2.0</small></div>
+    </aside>
+    <main id="main" tabindex="-1">
+      <header class="topbar"><span id="date-label"></span><span class="save-status" id="save-status">本地保存</span></header>
+      <div id="app"></div>
+      <footer class="page-footer">春秋有时，生长不止。<span>90 天是起点，不是期限。</span></footer>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="confirm-dialog"><form method="dialog"><h2 id="confirm-title">确认操作</h2><p id="confirm-message"></p><div class="actions"><button value="cancel" class="secondary">取消</button><button value="confirm" class="primary">确认</button></div></form></dialog>
+  <noscript><p class="warning">请开启浏览器 JavaScript，以使用任务和本地存档。</p></noscript>
+</body>
+</html>
